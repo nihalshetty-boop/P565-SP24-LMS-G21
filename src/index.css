@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .card {
+      background-color: theme('colors.white');
+      border-radius: theme('borderRadius.lg');
+      padding: theme('spacing.4');
+      box-shadow: theme('boxShadow.xl');
+      width: 60%;
+      margin-bottom: 10px;
+      column-gap: 4;
+    }
+
+
+    .card-body {
+      align-items: flex-start;
+      justify-content: flex-start;
+      display: flex;
+    }
+
+    .avatar-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .avatar-username {
+      font-size: 14px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: '10px';
+      margin-left: '5px';
+
+    }
+
+    .timestamp{
+      text-align: right;
+      font-size: '8px';
+    }
+    /* ... */
+
+    .main-area{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #msg{
+      height: 90%;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    form{
+      height: 10%;
+    }
+
+    #name{
+      
+      width: 30%;
+    }
+
+  }
